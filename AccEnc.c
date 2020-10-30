@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "head_bank.h"
+
+
 unsigned check_bit (char* in, unsigned i) {
 	unsigned nbyte = i / 8;
 	unsigned nbit = i % 8;
@@ -11,7 +16,7 @@ void set_bit (char* in, unsigned i) {
 }
 
 int resheto (int n) {
-	unsigned char *sieve[130];
+	unsigned char *sieve[130] = {0};
 	unsigned r = sqrt (1000) + 1;
 	unsigned i = 0;
 	unsigned j = 0;
